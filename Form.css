@@ -69,7 +69,7 @@ label{
     font-size: 17px;
 }
 .awdhikar{
-display: flex;border: 0.1px solid blue;margin: 10px;
+display: flex;border: 0.1px solid blue;margin: 10px;width: 100%;
 padding: 10px; 
 }
 .awdhikar1{
