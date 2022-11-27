@@ -1,11 +1,23 @@
-/* .container1{
-    height: 100vh;  display: flex;
-      padding: 0px;margin: 0px;
-    background-color: rgb(166, 213, 213); 
-} */
- body{
-    background-color: aliceblue;
- }
+.div1{
+display: flex; margin: 30px;
+
+}
+.div11{
+margin-right: 4%;margin-left:10%;
+
+}
+.div2{  background-color: rgb(226, 240, 252);
+     
+    display: flex;   
+}
+.div21{
+    margin-right: 4%;margin-left:12%;
+    display: flex;align-items: center; 
+    }
+
+lable{
+    font-size: 25px;
+}
 .contain1{ 
     background-color: aliceblue;
 }
@@ -13,15 +25,11 @@
      position :fixed; background-color: antiquewhite;
 }
 
-.heading{background-color: antiquewhite;
-    text-align:  center; 
+.heading{background-color: antiquewhite;margin-top: 4px;
+    text-align:  center;  
     justify-content:center;
-}
- 
-.noti{
-    text-align: center;margin-top: 40px;align-items: center;
-}
- 
+} 
+
 .swikar{ 
     font-size: 25px;border: 1px solid blue;border-radius:10px ;
 }
@@ -42,10 +50,7 @@ option.swikar{
     display: flex;align-items: center;
     
 }
-.div2{
-    display: flex;font-size: 18px;
-    margin-left: 40px; 
-}  
+ 
  
 .form1{text-align: flex-start;
     font-size: 27px;
@@ -65,17 +70,7 @@ option.swikar{
 /* div2.h3{
     align-items: center;border: 1px solid blue;
 } */
-label{
-    font-size: 17px;
-}
-.awdhikar{
-display: flex;border: 0.1px solid blue;margin: 10px;width: 1200px;
-padding: 10px; 
-}
-.awdhikar1{
-display: flex;align-items: center;padding: 20px;margin :10px
-
-}
+ 
 input{
     align-items: flex-end;padding:5px;
 }
@@ -85,17 +80,8 @@ input{
 .butt{ text-align: center; padding: 5px;margin: 5px;
     
 }
-.contain{
-    margin: 50px
-}
-.ser{
-border: none;border-radius: 10px;font-size: 25px;margin: 10px;
-
-}
-.ser1{
-    border: none;border-radius: 10px;font-size: 25px;margin: 10px;
-    cursor: pointer;
-    }
+ 
+ 
 a.but{
 padding: 0px 15px 0;
 text-decoration: none;
