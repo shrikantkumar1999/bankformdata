@@ -1,6 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style> 
+  table{
+    margin: 0px 10px 0;background-color: greenyellow; text-align: centers;
+  }  
+  th,td {
+padding:5px;border: 1px solid aliceblue;
+  }
+tbody{
+        overflow-y: scroll; 
+background-color: rgb(190, 215, 237)  ;      }
+  .th1{
+    align-items: center ;text-align: center;
+  }
+.tr3{text-align: center;background-color: greenyellow; }
+ thead,th{background-color: greenyellow;  position: sticky;
+ }
+  thead.thed {
+   margin: 10px; 
+  }
+  .tableFixHead {
+        overflow-y: auto;
+        height: 106px;
+      }
+      .tableFixHead thead th {
+        position: sticky;
+        top: 0;
+      }
+
+  /* *****************************copy css ************************* */
+      /* .tableFixHead {
+       
+        height: 500px;
+      }
+      .tableFixHead thead th {
+        position: sticky;
+        top: 0;
+      }
+      tbody{
+        overflow-y: auto;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        padding: 8px 16px;
+        border: 1px solid #ccc;
+      }
+      th {
+        background: #eee;
+      } */
+  /* *****************************copy css ************************* */
+
+
+  </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,36 +66,44 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  
 </head>
-<body>
-    <div style="display: flex;" > 
-    <div style="display: flex;margin:10px;padding: 10px;"> <a href="./index.html" class="but1"  >back </a></div>
-    <div style="display: flex;margin:10px;padding: 10px;"><h2 id="usernamen" style="display:none"></h2></div>
-    <div style="display: flex;margin:10px;padding: 10px;"> <input type="button" id="fix" style="display: none;"  value=""></div>
-    <div style="display: flex;margin:10px;padding: 10px;"><input id="inpu" placeholder="password "style="padding-left: 20px;padding-right: 20px;" class="form2" type="password"></div>
-    <div style="display: flex;margin:10px;padding: 10px;"> <button class="but" style="padding-left: 20px;padding-right: 20px;"id="veri" >get all data</button></div>
-    <div style="display: flex;margin:10px;padding: 10px;"><button class="but" style="padding-left: 20px;padding-right: 20px;"id="verii" >save data</button></div>
+<body style="background-color: aliceblue;">
+    <div style="display: flex;"> 
+    <div style=" margin: 10px;padding: 0px;"> <a href="./index.html" class="but1">back </a></div>
+    <div style=" margin:10px;padding: 10px;"><h2 id="usernamen" style="display:none"></h2></div>
+    <div style=" margin:10px;padding: 10px;"> <input type="button" id="fix" style="display: none;"  value=""></div>
+    <div style=" margin:10px;padding: 10px;"><input id="inpu" placeholder="password "style="padding-left: 20px;padding-right: 20px;" class="form2" type="password"></div>
+    
+    
+    <div style=" margin:5px;padding: 10px;"> <button class="but" style="padding-left: 20px;padding-right: 20px;"id="veri" >get all data</button></div>
+    <div style="margin:10px;padding: 10px;"><button class="but" style="padding-left: 20px;padding-right: 20px;"id="verii" >save data</button></div>
     
    
 </div>
-  <div class="container mt-3">
+  <div >
 
  
-     <table class="table table-dark">
-        <thead>
-           <th>iddd</th>
-            <th>unique_id </th>
-            <th>khata</th>
-            <th>nam / father_name</th>
-            <th>block</th>
-            <th>phone_number</th>
-            <th>udeshya</th>
-            <th>byaj_dar</th>
-            <th>sector</th>
-        </thead>
-        
-      
- 
+     <table class="tableFixHead" >
+  <thead >
+    
+   <tr class="th1"> <th colspan="37" >balotara sahkari bhmi vikash bank limited ,shakha balotara </th> </tr></thead><thead>
+   <tr class="th1">  <th colspan="37">   gramwar awdhipar resister year 2022-2023  </th>     </tr></thead>
+<thead>    
+<tr class="tr3"><th>1</th><th>2</th><th >3 </th><th>4 </th><th colspan="2">5 </th><th>6 </th><th> 7</th> <th>8</th><th>9</th><th> 10</th><th>11 </th><th>12 </th><th>13 </th><th> 14</th> <th>15</th><th>16</th><th> 17</th><th>18 </th><th>19 </th><th>20</th><th> 21</th> <th>22</th><th>23</th><th> 24</th><th>25 </th><th>26 </th><th>27 </th><th> 28</th> <th>29</th><th>30</th><th> 31</th><th>32 </th><th>33 </th><th>34 </th><th> 35</th><th>36</th> </tr>
 
+
+ <tr><th></th> <th></th><th></th><th>nam /</th><th></th><th rowspan="2">gram panchayat</th><th></th><th></th><th></th> <th></th><th></th><th >total </th>
+        <th colspan="4" style="text-align:center" rowspan="2">awadhikar mang</th > <th colspan="9" style="text-align:center;">vasooli karwahi vivaran</th> <th colspan="6"style="text-align:center;" >adhiniyamantargat karwahi ka vivran:  </th>                             
+            <th rowspan="2"colspan="2">vasooli rashi jama </th>
+            <th  >   </th>
+            
+            <th> </th>
+            <th> </th></tr>
+            
+            <tr class="tr3"><th>serial  </th><th></th><th ></th><th>father </th><th> </th><th></th><th> phone</th><th></th> <th></th><th></th> <th> बकाया </th> <th colspan="4" >first takaja  </th><th>swikar/awsikar </th> <th colspan="4"> second takaja</th> <th colspan="2">notice 89/99 </th><th colspan="2">order 89/99 </th> <th colspan="2">warant star par(100) </th> <th rowspan="2"> vishesh vivran</th> <th> </th><th></th> </tr>
+            <tr class="tr3"><th>.num</th><th>iddd</th><th >khata </th> <th>name </th><th>gram </th><th>panchayat </th><th> blcok</th> <th>number</th><th>udeshya</th><th> byaj_dar</th><th>sector</th><th>ऋण </th><th>dar_byaj</th> <th>byaj</th><th>mool</th><th>total</th><th>dasti_mang_notice</th><th>tamili_dinank</th><th> signature</th><th>vayda_dinak </th> <th>maujuda ya nhi </th><th>signature </th><th>nishani </th><th>loaner se sambadh  </th> <th>vayda_dinak</th><th>jari_dinak </th><th> tamili_dinank</th><th>jari_dinak</th><th>tamili_dinank </th><th>jari_dinak</th><th> kurki_nilami</th> <th>dinak</th><th>rashi</th><th></th> <th></th><th></th> </tr>
+
+        </thead> 
+     
         <tbody id="tbody1"></tbody>
 
     </table>
@@ -48,7 +112,39 @@
 <script type="module" >
 var tbody=document.getElementById('tbody1');
 var stdNo=0;
-function AddItemToTable(UniqueId,nam,father_name,block,khata,udeshya,byaj_dar,sector,phone_number){
+function AddItemToTable(
+Uniqueid,
+khata,
+nam,
+father_name,gram,panchayat,block,phone_number,
+udeshya,
+dar_dar,
+sector,
+total_loan_amount,
+byajdar,
+byaj,
+mool,
+total,
+dasti_mang_notice,
+tamili_dinank,
+signature,
+vayda_dinak,
+swikar_aswikar,
+signature1,
+nishani,
+loan_se_sambandh,
+vayda_dinak1,
+jari_dinak,
+tamili_dinank1,
+jari_dinak1,
+tamili_dinank2,
+jari_dinak2,
+kurki_nilami,
+vasooli_date,
+rashivasooli,
+vishesh_vivran,
+
+){
 
 
 let trow=document.createElement("tr");
@@ -60,15 +156,76 @@ let td5=document.createElement("td");
 let td6=document.createElement("td");
 let td7=document.createElement("td");
 let td8=document.createElement("td");
+let td9=document.createElement("td");
+let td10=document.createElement("td");
+let td11=document.createElement("td");
+let td12=document.createElement("td");
+let td13=document.createElement("td");
+let td14=document.createElement("td");
+let td15=document.createElement("td");
+let td16=document.createElement("td");
+let td17=document.createElement("td");
+let td18=document.createElement("td");
+let td19=document.createElement("td");
+let td20=document.createElement("td");
+let td21=document.createElement("td");
+let td22=document.createElement("td");
+let td23=document.createElement("td");
+let td24=document.createElement("td");
+let td25=document.createElement("td");
+let td26=document.createElement("td");
+let td27=document.createElement("td");
+let td28=document.createElement("td");
+let td29=document.createElement("td");
+let td30=document.createElement("td");
+let td31=document.createElement("td");
+let td32=document.createElement("td");
+let td33=document.createElement("td");
+let td34=document.createElement("td");let td35=document.createElement("td");
+
+
+
 
 td1.innerHTML=++stdNo;
-td2.innerHTML=parseInt(UniqueId);
+td2.innerHTML=parseInt(Uniqueid);
 td3.innerHTML=khata;
 td4.innerHTML=nam+"/"+father_name;
-td5.innerHTML=block;
-td6.innerHTML=phone_number;
-td7.innerHTML=udeshya; 
-td8.innerHTML=byaj_dar;
+td5.innerHTML=gram;
+td6.innerHTML=panchayat;
+td7.innerHTML=block;
+td8.innerHTML=phone_number;
+td9.innerHTML=udeshya;
+td10.innerHTML=dar_dar;
+td11.innerHTML=sector;
+td12.innerHTML=total_loan_amount;
+td13.innerHTML=byajdar;
+td14.innerHTML=byaj;
+td15.innerHTML=mool;
+td16.innerHTML=total;
+td17.innerHTML=dasti_mang_notice;
+td18.innerHTML=tamili_dinank;
+td19.innerHTML=signature;
+td20.innerHTML=vayda_dinak;
+td21.innerHTML=swikar_aswikar;
+td22.innerHTML=signature1;
+td23.innerHTML=nishani;
+td24.innerHTML=loan_se_sambandh;
+td25.innerHTML=vayda_dinak1;
+td26.innerHTML=jari_dinak;
+td27.innerHTML=tamili_dinank1;
+td28.innerHTML=jari_dinak1;
+td29.innerHTML=tamili_dinank2;
+td30.innerHTML=jari_dinak2;
+td31.innerHTML=kurki_nilami;
+td32.innerHTML=vasooli_date;
+td33.innerHTML=rashivasooli;
+td34.innerHTML=vishesh_vivran;
+
+
+
+
+
+
 
 trow.appendChild(td1);
 trow.appendChild(td2);
@@ -78,7 +235,32 @@ trow.appendChild(td5);
 trow.appendChild(td6);
 trow.appendChild(td7);
 trow.appendChild(td8);
-
+trow.appendChild(td9);
+trow.appendChild(td10);
+trow.appendChild(td11);
+trow.appendChild(td12);
+trow.appendChild(td13);
+trow.appendChild(td14);
+trow.appendChild(td15);
+trow.appendChild(td16);
+trow.appendChild(td17);
+trow.appendChild(td18);
+trow.appendChild(td19);
+trow.appendChild(td20);
+trow.appendChild(td21);
+trow.appendChild(td22);
+trow.appendChild(td23);
+trow.appendChild(td24);
+trow.appendChild(td25);
+trow.appendChild(td26);
+trow.appendChild(td27);
+trow.appendChild(td28);
+trow.appendChild(td29);
+trow.appendChild(td30);
+trow.appendChild(td31);
+trow.appendChild(td32);
+trow.appendChild(td33);
+trow.appendChild(td34);
 tbody.appendChild(trow);
  
 }
@@ -86,24 +268,30 @@ tbody.appendChild(trow);
  
 function AddAllItemToTable(datee){ 
 datee.forEach(element=>{ 
-AddItemToTable(element.UniqueId,element.nam,element.father_name,element.block,element.khata,element.udeshya,element.byaj_dar,element.sector,element.phone_number);
- });
+AddItemToTable(element.Uniqueid,element.khata, element.nam,element.father_name,element.gram,element.panchayat,element.block,
+ element.phone_number, element.udeshya,element.dar_dar,element.sector,element.total_loan_amount,element.byajdar,
+ element.byaj,element.mool,element.total,element.dasti_mang_notice, element.tamili_dinank,element.signature,element.vayda_dinak,
+ element.swikar_aswikar, element.signature1,element.nishani,element.loan_se_sambandh,element.vayda_dinak1,element.jari_dinak,
+ element.tamili_dinank1, element.jari_dinak1,element.tamili_dinank2,element.jari_dinak2,element.kurki_nilami,element.vasooli_date,
+ element.rashivasooli,element.vishesh_vivran,
+);
+
+});
 } // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
     // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyBaAXmU3KU2EiMRUinqq9svxQtI65wwxpA",
-    authDomain: "formdata-b7401.firebaseapp.com",
-    databaseURL: "https://formdata-b7401-default-rtdb.firebaseio.com",
-    projectId: "formdata-b7401",
-    storageBucket: "formdata-b7401.appspot.com",
-    messagingSenderId: "44569804899",
-    appId: "1:44569804899:web:ffe6af4efafd322d09b856"
-  };
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
+ const firebaseConfig = {
+  apiKey: "AIzaSyBaAXmU3KU2EiMRUinqq9svxQtI65wwxpA",
+  authDomain: "formdata-b7401.firebaseapp.com",
+  databaseURL: "https://formdata-b7401-default-rtdb.firebaseio.com",
+  projectId: "formdata-b7401",
+  storageBucket: "formdata-b7401.appspot.com",
+  messagingSenderId: "44569804899",
+  appId: "1:44569804899:web:ffe6af4efafd322d09b856"
+};
+const app = initializeApp(firebaseConfig);
  import {
     getFirestore,doc,getDoc,getDocs,onSnapshot,collection ,query, orderBy, limit,collectionGroup
  }
@@ -123,16 +311,12 @@ async function GetAllDataOnce(){
     // });
   
     console.log(students.length);
-const museums = query(collection(db, 'date'), orderBy('UniqueId'));
+const museums = query(collection(db, 'date'),orderBy('Uniqueid','asc',limit(2)));
 const querySnapshot = await getDocs(museums);
 querySnapshot.forEach(doc => {
         students.push(doc.data());
-    });
-
-  
-   
-
-     console.log(students.length);
+    }); 
+      console.log(students.length);
     AddAllItemToTable(students);
 }
 const userdata = await getDocs(collection(db,"user")); //.collection("formdata").orderBy("date", "asc")
@@ -142,8 +326,9 @@ const userdata = await getDocs(collection(db,"user")); //.collection("formdata")
                   user.push(doc.data());
               }); 
 //add eventlistner
+var rew="re";
 document.getElementById('veri').addEventListener('click' ,function(){
-  for(var i=0;i<user.length;i++)
+  for(var i=0;i<user.length;i++){
 if(document.getElementById('inpu').value==user[i].password){
   document.getElementById('inpu').value="";   document.getElementById('tbody1').innerHTML="";
   stdNo=0;
@@ -153,14 +338,14 @@ document.getElementById('usernamen').style.display="block";
 GetAllDataOnce();
 document.getElementById('verii').addEventListener('click',function(){
 document.getElementById('veri').accessKey='p';
-
-
 })
-  // window.onload=GetAllDataOnce;
+rew="trdue";
+break;
+  }
 
-}
-else alert("you are not authorised...")
-
+} 
+if(rew=="re")
+alert("you are not authorised...")
 })
 
 </script>
@@ -168,3 +353,7 @@ else alert("you are not authorised...")
 
 </body>
 </html>
+
+
+
+
