@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form ...</title>
     <link rel="stylesheet" href="Form.css">
-    <script type="module">
-       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-       const firebaseConfig = {
-    apiKey: "AIzaSyBaAXmU3KU2EiMRUinqq9svxQtI65wwxpA",
-    authDomain: "formdata-b7401.firebaseapp.com",
-    databaseURL: "https://formdata-b7401-default-rtdb.firebaseio.com",
-    projectId: "formdata-b7401",
-    storageBucket: "formdata-b7401.appspot.com",
-    messagingSenderId: "44569804899",
-    appId: "1:44569804899:web:ffe6af4efafd322d09b856"
-  };
-  // Initialize Firebase
+
+
+<script type="module">import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+ const firebaseConfig = {
+  apiKey: "AIzaSyBaAXmU3KU2EiMRUinqq9svxQtI65wwxpA",
+  authDomain: "formdata-b7401.firebaseapp.com",
+  databaseURL: "https://formdata-b7401-default-rtdb.firebaseio.com",
+  projectId: "formdata-b7401",
+  storageBucket: "formdata-b7401.appspot.com",
+  messagingSenderId: "44569804899",
+  appId: "1:44569804899:web:ffe6af4efafd322d09b856"
+};
+ 
   const app = initializeApp(firebaseConfig);
   import {
         getFirestore,doc,getDoc,getDocs,onSnapshot,collection ,query, orderBy, limit
       }
       from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
-      console.log('sjdf');
  var ret= document.getElementById('UniqueId').value;
  var auth_name,auth_pass; 
       const db = getFirestore();
@@ -38,93 +38,98 @@
                userdata.forEach(doc => {
                   user.push(doc.data());
               }); 
-              var auth_name,auth_pass; 
-console.log(students);
-auth_name=user[0].name;console.log(typeof(user[0].name));
-auth_pass=user[0].password;console.log(auth_name)
-document.getElementById('username1').value=auth_name;
-document.getElementById('password1').value=auth_pass;
-             var ret= document.getElementById('UniqueId').value;
+            //   var auth_name,auth_pass; 
+ 
+document.getElementById('uuser').value=user;
+     ret= document.getElementById('UniqueId').value;
                document.getElementById('UniqueId').value=students.length+1;
           }
-          if(ret=="unique_id"){GetAllDataOnce();}
+          if(ret=="unique_id"){GetAllDataOnce();}//change
           let submitButton =document.getElementById('submit');
            </script>
            </head>
 <body style="margin: 0;" > 
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-<div class="head"><h3 class="heading">  bank balontara sahkari bhumi vikas bank limited, shakha balotara </h3></div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>  
+<div class="head"><h3 class="heading"  >  bank balontara sahkari bhumi vikas bank limited, shakha balotara </h3></div>
 <div>
-      <br><br><br><br>
-      <div class="contain1"id="top">
-         
-         <form id="for">
-            <div class="div2"  > <h1 style="margin-left: 80px;" id="fixeduser"value=""> </h1></div>
-            <div class="div2"><div><lable> UniqueId :</lable><input id="UniqueId" type="button" value="unique_id" class="form22" placeholder="UniqueId"></div></div>
-            <div class="div2" >
-               <div class="div2"><div><lable> khata :</lable><input id="khata" type="number" class="form22" placeholder="khata"></div></div>
-               <div class="div2"><div> <lable> block :</lable><input id="block"  class="form22" placeholder="block"></div></div>
-            </div>
-            <div class="div2" >
-               <div class="div2"><div><lable> nam rini may  :</lable><input id="nam"  class="form22" placeholder="nam"></div></div>
-               <div class="div2"><div><lable> phone number :</lable><input id="phone_number"  class="form22" placeholder=" phone_number"type="number"></div></div>               
-            </div>
-     <div class="div2" ><div class="div2"><div><lable> father name  :</lable><input id="father_name"  class="form22" placeholder="father_name "></div></div>
-     <div class="div2"><div><lable> udeshya :</lable><input id="udeshya"  class="form22" placeholder="udeshya"></div></div>
-      
-      <p id="username1"value=""></p>
-      <p id="password1"value=""></p>
-   </div>
-   <div class="div2" ><div class="div2"><div><lable> gram :</lable><input id="gram"  class="form22" placeholder="gram"></div></div>
-   <div class="div2"><div><lable> byaj :</lable><input id="byaj" type="number" class="form22" placeholder="byaj"></div></div>     
-   </div>
-   <div class="div2" ><div class="div2"><div><lable> panchayat :</lable><input id="panchayat"  class="form22" placeholder="panchayat"></div></div>
-   <div class="div2"><div><lable> sector :</lable><input id="sector"  class="form22" placeholder="sector"></div></div>        
+   <p id="uuser" value=""></p>
+   <br>
+   <br>
+      <div class="contain1"id="top">    
+         <form>
+ <div style="width: 100%;text-align: center; padding: 0;margin-top:0 ; position :fixed;background-color: aliceblue;" >
+   <h1 style="margin-top: 0;" id="fixeduser"value="">USER NAME </h1></div><br><br>
+   <!--div1  -->
+<div class="div1">
+<div class="div11">
+   <div><lable> UniqueId :  </lable><input id="UniqueId" type="button" value="unique_id" class="form22" placeholder="UniqueId"></div>
+   <div  > <lable> khata :   </lable><input id="khata" type="number" class="form22" placeholder="khata"></div> 
+  <div><lable> nam rini may  :   </lable><input id="nam"  class="form22" placeholder="nam"></div> 
+   <div><lable> father name  :</lable><input id="father_name"  class="form22" placeholder="father_name "></div> 
+    <div><lable> panchayat :</lable><input id="panchayat"  class="form22" placeholder="panchayat"></div>
+    <div> <lable> total loan amount :</lable><input id="total_loan_amount"  class="form22" placeholder="total loan amount"></div>
+</div>
+<div>
+   <div> <lable> block :</lable><input id="block"  class="form22" placeholder="block"></div>
+   <div><lable> phone number :</lable><input id="phone_number"  class="form22" placeholder="phone_number"type="number"></div>
+   <div><lable> udeshya :</lable><input id="udeshya"  class="form22" placeholder="udeshya"></div>
+   <div><lable>  byaj dar :</lable><input id="dar_dar" type="number" class="form22" placeholder=" byaj_dar"></div>
+   <div><lable> sector :</lable><input id="sector"  class="form22" placeholder="sector"></div>
+    <div><lable> gram :</lable><input id="gram"  class="form22" placeholder="gram"></div>
+</div>
+</div>
+<!--            end div1       start div2             -->
+<div class="div2">
+            <div class="div21" > <h3>awdhikar mang : </h3></div>
+         <div>
+    <!-- <div><lable> byaj dar :</lable><input id="byajdaar" type="number" class="form22" placeholder="byajdar"></div> -->
+    <div><lable> byaj dar :</lable><input id="byajdar" type="number" class="form22" placeholder="byajdar"></div>
+                
+            <div><lable> byaj :</lable><input id="byaj" type="number" class="form22" placeholder="byaj"></div>
+             <div><lable> mool :</lable><input id="mool" type="number" class="form22" placeholder="mool"></div>
+            <div><lable> total :</lable><input id="total" type="number" class="form22" placeholder="total"></div>
+         </div>
      </div>
-<div class="div2"><div> <lable> total loan amount :</lable><input id="total_loan_amount"  class="form22" placeholder="total loan amount"></div></div>
-    
-         <div class="awdhikar">
-            <div class="awdhikar1"> <h3>awdhikar mang : </h3></div>
-         <div  >
-            <div><lable> dar byaj :</lable><input id="dar_byaj"  class="form22" placeholder=" dar_byaj"></div>
-            <div><lable> byaj :</lable><input id="byaj1"  class="form22" placeholder="byaj"></div>
-            <div><lable> mool :</lable><input id="mool"  class="form22" placeholder="mool"></div>
-            <div><lable> total :</lable><input id="total"  class="form22" placeholder="total"></div>
-              </div>
-     </div>
-     <div class="awdhikar">
-      <div class="awdhikar1"> 
-         <div class="awdhikar1"> <h3>Pratham takaja: </h3></div>
+<!--         end div2  start div3  -->
+
+<div style=" display: flex;background-color: rgb(230, 236, 241);">
+      <div class="div1" style="margin-left: 10%;"> 
+         <div class="div1"> <h3>Pratham takaja: </h3></div>
         <div  >
         <div><lable> dasti mang notice :</lable><input id="dasti_mang_notice"  class="form22" placeholder="dasti_mang_notice"></div>
-        <div><lable> tamili dinak :</lable><input id="tamili_dinank"  class="form22" placeholder="tamili_dinank"></div>
+        <div><lable> tamili dinak may:</lable><input id="tamili_dinank"  class="form22" placeholder="tamili_dinank"></div>
         <div><lable> signature :</lable><input id="signature"  class="form22" placeholder="signature"></div>
         <div><lable> vayda dinank :</lable><input id="vayda_dinak"  class="form22" placeholder="vayda_dinank"></div>
       </div>
     </div>
-    <div class="awdhikar1">
-    <div class="awdhikar1"> <h3> second takaja: </h3></div>
+    <div class="div1">
+    <div class="div1"> <h3> second takaja: </h3></div>
      <div  >
         <div><lable> signature :</lable><input id="signature1"  class="form22" placeholder="signature"></div>
         <div><lable> nishani :</lable><input id="nishani"  class="form22" placeholder="nishani"></div>
-        <div><lable> loan se sambandh :</lable><input id="loan_se_sambandh"  class="form22" placeholder="loan_se_sambandh"></div>
-        <div><lable> vayda :</lable><input id="vayda"  class="form22" placeholder="vayda"></div>
-  
-    </div></div>
+        <div><lable> loan wale se sambandh :</lable><input id="loan_se_sambandh"  class="form22" placeholder="loan_se_sambandh"></div>
+        <div><lable> vayda dinank:</lable><input id="vayda_dinak1"  class="form22" placeholder="vayda" type="date"></div>
+      </div></div>
  </div>
-<div  style="padding: 10px;margin:10px">
-    <label>swikar / aswikar mang maujuda ya nhi :</label><select id="swikar_aswikar" class="swikar">
-      <option value="swikar"  selected>swikar</option><option value="aswikar">aswikar</option> </select> </div>
 
-<div class="awdhikar">
-   <div class="awdhikar1"><h3> adhinayat karwahi ka vivran: </h3></div>
+
+<div  style="padding: 10px;margin-left:10%">
+    <label style="font-size: 25px;">swikar / aswikar mang maujuda ya nhi :</label>
+    <select id="swikar_aswikar" class="swikar">
+      <option value=""  selected>selet</option>
+      <option value="swaikar" >swaikar</option>
+      <option value="aswikar">aswikar</option> </select> 
+</div>
+
+<div class="div2">
+   <div class="div21"><h3> adhiniyamantargat karwahi ka vivran: </h3></div>
    <div style="display: flex;">
       <div class="awdhikar1">
          <div><h3> notice 89/99 : </h3> </div>
          <div>
             <div><div><lable> jari dinank :</lable><input id="jari_dinak"  class="form22"type="date" placeholder="panchayat"></div>
-            <div><lable> tamili dinank1 :</lable><input id="tamili_dinank1"type="date"  class="form22" placeholder="tamili_dinank"></div>
+            <div><lable> tamili dinank :</lable><input id="tamili_dinank1"type="date"  class="form22" placeholder="tamili_dinank"></div>
          </div>
       </div>
    </div>
@@ -132,7 +137,7 @@ document.getElementById('password1').value=auth_pass;
       <div><h3> order 89/99 : </h3> </div>
       <div>
          <div><div><lable> jari dinank :</lable><input id="jari_dinak1"  class="form22"type="date" placeholder="panchayat"></div>
-         <div><lable> tamili dinank1 :</lable><input id="tamili_dinank2"type="date"  class="form22" placeholder="tamili_dinank"></div>
+         <div><lable> tamili dinank :</lable><input id="tamili_dinank2"type="date"  class="form22" placeholder="tamili_dinank"></div>
       </div>
    </div>
 </div>
@@ -140,51 +145,54 @@ document.getElementById('password1').value=auth_pass;
    <div><h3> warrant star par (100) : </h3> </div>
    <div>
       <div><div><lable> jari dinank :</lable><input id="jari_dinak2"  class="form22"type="date" placeholder="panchayat"></div>
-      <div><lable> kurki/nilami/vasuli :</lable><input id="kurki_nilami3"type="date"  class="form22"></div>
+      <div><lable> kurki/nilami/vasuli :</lable><input id="kurki_nilami" type="date"  class="form22"></div>
    </div>
 </div>
 </div> 
 </div>
-</div>
+</div> 
 
-
-
-
-<div>
+<div style="margin-left: 12%;display:flex ;">
 <div><label> blank :</label><input class="form22"> </div>
 <div><label> blank :</label><input class="form22"> </div>
 <div><label> blank :</label><input class="form22"> </div>
 </div>
 
  
-<div class="awdhikar1">      
-    <div class="awdhikar1"> <h3> vasooli jama rashi </h3></div>
+<div class="div2">      
+    <div class="div21"> <h3> vasooli jama rashi </h3></div>
     <div> 
-      <div><lable> date :</lable><input id="fname"  class="form22" placeholder="date"></div>
-   <div><lable> rashi :</lable><input id="1"  class="form22" placeholder="rashi"></div>
+      <div><lable> date :</lable><input id="vasooli_date"  class="form22" placeholder="date"></div>
+   <div><lable> rashi :</lable><input id="rashivasooli"  class="form22" placeholder="rashi"></div>
 
 </div> 
 <div> 
-   <div><lable> username :</lable><input id="username" type="text" class="form22" placeholder="username"></div>
+   <div><lable style="color: red;"> username :</lable><input id="username" type="text" class="form22" placeholder="username"></div>
 
-    <div><lable> password :</lable><input id="password" type="password" class="form22" placeholder="password"></div>
-    <div><lable> entry date  :</lable><input id="4"  class="form22" placeholder="time"></div>
+    <div><lable style="color:red"> password :</lable><input id="password"class="form22"type="password" placeholder="password"></div>
+    <div><lable> entry date  :</lable><input id="fghfgh"  class="form22" placeholder="time"></div>
   
 </div>
 </div>
 
+<div class="div21">
+<label> vshesh vivaran :</label><input type="text" id="vishesh_vivran" class="form22">
+</div>
+
 <div>
-<label> veshesh vivaran :</label><input type="text" class="form22">
-    
-</div> 
  <div class="butt">
-   <button class="but"style="padding-left: 20px;padding-right: 20px;" type="submit" id="submit" >Submit</button>
-   <button class="but" type="reset"  style="padding-left: 20px;padding-right: 20px;" >Reset</button>  </div>
-   <button class="but"style="padding-left: 20px;padding-right: 20px;" type="submit" id="linn" >List</button>    
-    <a href="data.html" class="but" id="lin"> Check All List of Data 2 </a><br><br>
+   <button class="but"style="padding-left: 20px;padding-right: 20px;margin:10px" type="submit" id="submit" >Submit</button>
+   <button class="but" type="reset"  style="padding-left: 20px;padding-right: 20px;margin:10px" >Reset</button>  
+
+</div><div class="butt"><br>
+    <a href="data.html"style="padding-left: 20px;padding-right: 20px;"  class="but" id="lin"> Check All List of Data </a>
+</div>
+</div>
+   <br><br>
     </form>
    </div>
 </div>
+ 
  <!-- <div class="contain"> 
       <div class="form1"><lable style="color:#00000f"> Shrikant Kumar  [B.TECH] Mobile No: 7891965319</lable></div>
       <div class="form1"><lable style="color: #00000f"> Electronics and Communication Engineering:</lable></div>
@@ -204,7 +212,6 @@ document.getElementById('password1').value=auth_pass;
 </div> </div>
  <div><marquee class="but">To Develop Dynamic or Static responsive websites Contact us @ +91 78919 65319 or +91 75428 73001</marquee></div>
 <br><br><br> -->
-
 
 <!-- 
 <script type="module">
@@ -227,12 +234,27 @@ console.log(reet)
 
  document.getElementById("dis").value=reet;
       
+//42 for(var i=0;i<user.length;i++){
+// if(user[i].name==(document.getElementById('username1')))
+// {
+//    document.getElementById('username1').value=auth_name;console.log(auth_name);
 
+
+// }
+
+
+// }
+
+// auth_name=user[0].name;console.log(typeof(user[0].name));
+// auth_pass=user[0].password;console.log(auth_name)
+// document.getElementById('username1').value=auth_name;
+// 55 document.getElementById('password1').value=auth_pass;
 </script> -->
-
 
      <script   src="app.js" ></script>
 
      
 </body>
+
 </html>
+  
