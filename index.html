@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form ...</title>
     <link rel="stylesheet" href="Form.css">
-
-
 <script type="module">import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
  const firebaseConfig = {
   apiKey: "AIzaSyBaAXmU3KU2EiMRUinqq9svxQtI65wwxpA",
@@ -18,7 +16,6 @@
   messagingSenderId: "44569804899",
   appId: "1:44569804899:web:ffe6af4efafd322d09b856"
 };
- 
   const app = initializeApp(firebaseConfig);
   import {
         getFirestore,doc,getDoc,getDocs,onSnapshot,collection ,query, orderBy, limit
@@ -38,8 +35,6 @@
                userdata.forEach(doc => {
                   user.push(doc.data());
               }); 
-            //   var auth_name,auth_pass; 
- 
 document.getElementById('uuser').value=user;
      ret= document.getElementById('UniqueId').value;
                document.getElementById('UniqueId').value=students.length+1;
@@ -112,16 +107,13 @@ document.getElementById('uuser').value=user;
         <div><lable> vayda dinank:</lable><input id="vayda_dinak1"  class="form22" placeholder="vayda" type="date"></div>
       </div></div>
  </div>
-
-
 <div  style="padding: 10px;margin-left:10%">
     <label style="font-size: 25px;">swikar / aswikar mang maujuda ya nhi :</label>
     <select id="swikar_aswikar" class="swikar">
-      <option value=""  selected>selet</option>
+      <option value=""  selected>select</option>
       <option value="swaikar" >swaikar</option>
       <option value="aswikar">aswikar</option> </select> 
 </div>
-
 <div class="div2">
    <div class="div21"><h3> adhiniyamantargat karwahi ka vivran: </h3></div>
    <div style="display: flex;">
@@ -151,39 +143,30 @@ document.getElementById('uuser').value=user;
 </div> 
 </div>
 </div> 
-
 <div style="margin-left: 12%;display:flex ;">
 <div><label> blank :</label><input class="form22"> </div>
 <div><label> blank :</label><input class="form22"> </div>
 <div><label> blank :</label><input class="form22"> </div>
 </div>
-
- 
 <div class="div2">      
     <div class="div21"> <h3> vasooli jama rashi </h3></div>
     <div> 
       <div><lable> date :</lable><input id="vasooli_date"  class="form22" placeholder="date"></div>
    <div><lable> rashi :</lable><input id="rashivasooli"  class="form22" placeholder="rashi"></div>
-
 </div> 
 <div> 
    <div><lable style="color: red;"> username :</lable><input id="username" type="text" class="form22" placeholder="username"></div>
-
     <div><lable style="color:red"> password :</lable><input id="password"class="form22"type="password" placeholder="password"></div>
     <div><lable> entry date  :</lable><input id="fghfgh"  class="form22" placeholder="time"></div>
-  
 </div>
 </div>
-
 <div class="div21">
 <label> vshesh vivaran :</label><input type="text" id="vishesh_vivran" class="form22">
 </div>
-
 <div>
  <div class="butt">
    <button class="but"style="padding-left: 20px;padding-right: 20px;margin:10px" type="submit" id="submit" >Submit</button>
    <button class="but" type="reset"  style="padding-left: 20px;padding-right: 20px;margin:10px" >Reset</button>  
-
 </div><div class="butt"><br>
     <a href="data.html"style="padding-left: 20px;padding-right: 20px;"  class="but" id="lin"> Check All List of Data </a>
 </div>
@@ -192,68 +175,7 @@ document.getElementById('uuser').value=user;
     </form>
    </div>
 </div>
- 
- <!-- <div class="contain"> 
-      <div class="form1"><lable style="color:#00000f"> Shrikant Kumar  [B.TECH] Mobile No: 7891965319</lable></div>
-      <div class="form1"><lable style="color: #00000f"> Electronics and Communication Engineering:</lable></div>
-      <div class="form1"><lable style="color: #00000f">Indian Institute of Information Technology, Kota </lable></div>
-       <div class="form1"><br></div>
-       <div class="form1"><label style="color: #00000f">To Develop Dynamic or Static responsive websites</label></div> 
-        <div class="form1"><label style="color: #00000f">Contact us @ +91 78919 65319 or +91 75428 73001</label></div> 
-
-     <div class="form1"><label>&nbsp;</label></div>  
-  <div class="form1"><label>&nbsp;</label></div>   
- <br>
-
-           <div class="form1"><label>&nbsp;</label></div>
-            <div class="form1"><label>&nbsp;</label></div>
-             <div><marquee class="but">Developed by: Er. Shrikant Kumar</marquee></div>
-            <div><marquee class="but">Guided by: Dr. Piyush Sahu</marquee></div>
-</div> </div>
- <div><marquee class="but">To Develop Dynamic or Static responsive websites Contact us @ +91 78919 65319 or +91 75428 73001</marquee></div>
-<br><br><br> -->
-
-<!-- 
-<script type="module">
-    var reet=0;
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-  const app = initializeApp(firebaseConfig);
- import {
-    getFirestore,doc,getDoc,getDocs,onSnapshot,collection ,query, orderBy, limit
- }
- from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
- const db = getFirestore();
- var students=[]; 
- const querySnapshot = await getDocs(collection(db,"date"));
- querySnapshot.forEach(doc => {
-        students.push(doc.data());
-    });
-    reet=students.length;
-console.log(reet)
-
-
- document.getElementById("dis").value=reet;
-      
-//42 for(var i=0;i<user.length;i++){
-// if(user[i].name==(document.getElementById('username1')))
-// {
-//    document.getElementById('username1').value=auth_name;console.log(auth_name);
-
-
-// }
-
-
-// }
-
-// auth_name=user[0].name;console.log(typeof(user[0].name));
-// auth_pass=user[0].password;console.log(auth_name)
-// document.getElementById('username1').value=auth_name;
-// 55 document.getElementById('password1').value=auth_pass;
-</script> -->
-
      <script   src="app.js" ></script>
-
-     
 </body>
 
 </html>
