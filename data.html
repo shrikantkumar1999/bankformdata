@@ -28,244 +28,85 @@ background-color: rgb(190, 215, 237)  ;      }
         position: sticky;
         top: 0;
       }
-
-  /* *****************************copy css ************************* */
-      /* .tableFixHead {
-       
-        height: 500px;
-      }
-      .tableFixHead thead th {
-        position: sticky;
-        top: 0;
-      }
-      tbody{
-        overflow-y: auto;
-      }
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
-      th,
-      td {
-        padding: 8px 16px;
-        border: 1px solid #ccc;
-      }
-      th {
-        background: #eee;
-      } */
-  /* *****************************copy css ************************* */
-
-
   </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Form.css">
-
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- 
 </head>
 <body style="background-color: aliceblue;">
     <div style="display: flex;"> 
     <div style=" margin: 10px;padding: 0px;"> <a href="./index.html" class="but1">back </a></div>
     <div style=" margin:10px;padding: 10px;"><h2 id="usernamen" style="display:none"></h2></div>
-    <div style=" margin:10px;padding: 10px;"> <input type="button" id="fix" style="display: none;"  value=""></div>
-    <div style=" margin:10px;padding: 10px;"><input id="inpu" placeholder="password "style="padding-left: 20px;padding-right: 20px;" class="form2" type="password"></div>
-    
-    
+    <!-- <div style=" margin:10px;padding: 10px;"> <input type="button" id="fix" style="display: none;"  value=""></div> -->
+    <div style=" margin:10px;padding: 10px;">
+        <input id="inpu" placeholder="password "style="padding-left: 20px;padding-right: 20px;" class="form2" type="password">
+        </div>
     <div style=" margin:5px;padding: 10px;"> <button class="but" style="padding-left: 20px;padding-right: 20px;"id="veri" >get all data</button></div>
-    <div style="margin:10px;padding: 10px;"><button class="but" style="padding-left: 20px;padding-right: 20px;"id="verii" >save data</button></div>
-    
-   
+    <div style=" margin:5px;padding: 10px;"> <input style="padding-left: 20px;padding-right: 20px;"id="lim"value="" ></div>
+    <div style=" margin:5px;padding: 10px;"> <select class="but" style="padding-left: 20px;padding-right: 20px;"id="byy" >
+      <option value="Uniqueid"selected > Uniqueid</option>
+      <option value="nam" > name</option>
+      <option value="block" > block</option>
+      <option value="phone_number" > phone_number</option>
+      <option value="date" > date</option>
+      <option value="khata" > khata</option>
+      all data</select></div>
+    <div style="margin:10px;padding: 10px;"><button class="but"type="button" style="padding-left: 20px;padding-right: 20px;"id="verii" >save data</button></div>
 </div>
   <div >
-
- 
-     <table class="tableFixHead" >
+     <table id="tableFixHead" class="tableFixHead" >
   <thead >
-    
    <tr class="th1"> <th colspan="37" >balotara sahkari bhmi vikash bank limited ,shakha balotara </th> </tr></thead><thead>
    <tr class="th1">  <th colspan="37">   gramwar awdhipar resister year 2022-2023  </th>     </tr></thead>
 <thead>    
 <tr class="tr3"><th>1</th><th>2</th><th >3 </th><th>4 </th><th colspan="2">5 </th><th>6 </th><th> 7</th> <th>8</th><th>9</th><th> 10</th><th>11 </th><th>12 </th><th>13 </th><th> 14</th> <th>15</th><th>16</th><th> 17</th><th>18 </th><th>19 </th><th>20</th><th> 21</th> <th>22</th><th>23</th><th> 24</th><th>25 </th><th>26 </th><th>27 </th><th> 28</th> <th>29</th><th>30</th><th> 31</th><th>32 </th><th>33 </th><th>34 </th><th> 35</th><th>36</th> </tr>
-
-
  <tr><th></th> <th></th><th></th><th>nam /</th><th></th><th rowspan="2">gram panchayat</th><th></th><th></th><th></th> <th></th><th></th><th >total </th>
         <th colspan="4" style="text-align:center" rowspan="2">awadhikar mang</th > <th colspan="9" style="text-align:center;">vasooli karwahi vivaran</th> <th colspan="6"style="text-align:center;" >adhiniyamantargat karwahi ka vivran:  </th>                             
             <th rowspan="2"colspan="2">vasooli rashi jama </th>
             <th  >   </th>
-            
             <th> </th>
             <th> </th></tr>
-            
             <tr class="tr3"><th>serial  </th><th></th><th ></th><th>father </th><th> </th><th></th><th> phone</th><th></th> <th></th><th></th> <th> बकाया </th> <th colspan="4" >first takaja  </th><th>swikar/awsikar </th> <th colspan="4"> second takaja</th> <th colspan="2">notice 89/99 </th><th colspan="2">order 89/99 </th> <th colspan="2">warant star par(100) </th> <th rowspan="2"> vishesh vivran</th> <th> </th><th></th> </tr>
-            <tr class="tr3"><th>.num</th><th>iddd</th><th >khata </th> <th>name </th><th>gram </th><th>panchayat </th><th> blcok</th> <th>number</th><th>udeshya</th><th> byaj_dar</th><th>sector</th><th>ऋण </th><th>dar_byaj</th> <th>byaj</th><th>mool</th><th>total</th><th>dasti_mang_notice</th><th>tamili_dinank</th><th> signature</th><th>vayda_dinak </th> <th>maujuda ya nhi </th><th>signature </th><th>nishani </th><th>loaner se sambadh  </th> <th>vayda_dinak</th><th>jari_dinak </th><th> tamili_dinank</th><th>jari_dinak</th><th>tamili_dinank </th><th>jari_dinak</th><th> kurki_nilami</th> <th>dinak</th><th>rashi</th><th></th> <th></th><th></th> </tr>
-
+            <tr class="tr3"><th>.num</th><th>id</th><th >khata </th> <th>name </th><th>gram </th><th>panchayat </th><th> blcok</th> <th>number</th><th>udeshya</th><th> byaj_dar</th><th>sector</th><th>ऋण </th><th>dar_byaj</th> <th>byaj</th><th>mool</th><th>total</th><th>dasti_mang_notice</th><th>tamili_dinank</th><th> signature</th><th>vayda_dinak </th> <th>maujuda ya nhi </th><th>signature </th><th>nishani </th><th>loaner se sambadh  </th> <th>vayda_dinak</th><th>jari_dinak </th><th> tamili_dinank</th><th>jari_dinak</th><th>tamili_dinank </th><th>jari_dinak</th><th> kurki_nilami</th> <th>dinak</th><th>rashi</th><th></th> <th></th><th></th> </tr>
         </thead> 
-     
         <tbody id="tbody1"></tbody>
-
     </table>
-
   </div>  
 <script type="module" >
 var tbody=document.getElementById('tbody1');
 var stdNo=0;
 function AddItemToTable(
-Uniqueid,
-khata,
-nam,
-father_name,gram,panchayat,block,phone_number,
-udeshya,
-dar_dar,
-sector,
-total_loan_amount,
-byajdar,
-byaj,
-mool,
-total,
-dasti_mang_notice,
-tamili_dinank,
-signature,
-vayda_dinak,
-swikar_aswikar,
-signature1,
-nishani,
-loan_se_sambandh,
-vayda_dinak1,
-jari_dinak,
-tamili_dinank1,
-jari_dinak1,
-tamili_dinank2,
-jari_dinak2,
-kurki_nilami,
-vasooli_date,
-rashivasooli,
-vishesh_vivran,
-
+Uniqueid,khata,nam,father_name,gram,panchayat,block,phone_number,udeshya,dar_dar,sector,total_loan_amount,byajdar,byaj,mool,total,dasti_mang_notice,
+tamili_dinank,signature,vayda_dinak,swikar_aswikar,signature1,nishani,loan_se_sambandh,vayda_dinak1,jari_dinak,tamili_dinank1,jari_dinak1,
+tamili_dinank2,jari_dinak2,kurki_nilami,vasooli_date,rashivasooli,vishesh_vivran,
 ){
-
-
-let trow=document.createElement("tr");
-let td1=document.createElement("td");
-let td2=document.createElement("td");
-let td3=document.createElement("td");
-let td4=document.createElement("td");
-let td5=document.createElement("td");
-let td6=document.createElement("td");
-let td7=document.createElement("td");
-let td8=document.createElement("td");
-let td9=document.createElement("td");
-let td10=document.createElement("td");
-let td11=document.createElement("td");
-let td12=document.createElement("td");
-let td13=document.createElement("td");
-let td14=document.createElement("td");
-let td15=document.createElement("td");
-let td16=document.createElement("td");
-let td17=document.createElement("td");
-let td18=document.createElement("td");
-let td19=document.createElement("td");
-let td20=document.createElement("td");
-let td21=document.createElement("td");
-let td22=document.createElement("td");
-let td23=document.createElement("td");
-let td24=document.createElement("td");
-let td25=document.createElement("td");
-let td26=document.createElement("td");
-let td27=document.createElement("td");
-let td28=document.createElement("td");
-let td29=document.createElement("td");
-let td30=document.createElement("td");
-let td31=document.createElement("td");
-let td32=document.createElement("td");
-let td33=document.createElement("td");
-let td34=document.createElement("td");let td35=document.createElement("td");
-
-
-
-
-td1.innerHTML=++stdNo;
-td2.innerHTML=parseInt(Uniqueid);
-td3.innerHTML=khata;
-td4.innerHTML=nam+"/"+father_name;
-td5.innerHTML=gram;
-td6.innerHTML=panchayat;
-td7.innerHTML=block;
-td8.innerHTML=phone_number;
-td9.innerHTML=udeshya;
-td10.innerHTML=dar_dar;
-td11.innerHTML=sector;
-td12.innerHTML=total_loan_amount;
-td13.innerHTML=byajdar;
-td14.innerHTML=byaj;
-td15.innerHTML=mool;
-td16.innerHTML=total;
-td17.innerHTML=dasti_mang_notice;
-td18.innerHTML=tamili_dinank;
-td19.innerHTML=signature;
-td20.innerHTML=vayda_dinak;
-td21.innerHTML=swikar_aswikar;
-td22.innerHTML=signature1;
-td23.innerHTML=nishani;
-td24.innerHTML=loan_se_sambandh;
-td25.innerHTML=vayda_dinak1;
-td26.innerHTML=jari_dinak;
-td27.innerHTML=tamili_dinank1;
-td28.innerHTML=jari_dinak1;
-td29.innerHTML=tamili_dinank2;
-td30.innerHTML=jari_dinak2;
-td31.innerHTML=kurki_nilami;
-td32.innerHTML=vasooli_date;
-td33.innerHTML=rashivasooli;
-td34.innerHTML=vishesh_vivran;
-
-
-
-
-
-
-
-trow.appendChild(td1);
-trow.appendChild(td2);
-trow.appendChild(td3);
-trow.appendChild(td4);
-trow.appendChild(td5);
-trow.appendChild(td6);
-trow.appendChild(td7);
-trow.appendChild(td8);
-trow.appendChild(td9);
-trow.appendChild(td10);
-trow.appendChild(td11);
-trow.appendChild(td12);
-trow.appendChild(td13);
-trow.appendChild(td14);
-trow.appendChild(td15);
-trow.appendChild(td16);
-trow.appendChild(td17);
-trow.appendChild(td18);
-trow.appendChild(td19);
-trow.appendChild(td20);
-trow.appendChild(td21);
-trow.appendChild(td22);
-trow.appendChild(td23);
-trow.appendChild(td24);
-trow.appendChild(td25);
-trow.appendChild(td26);
-trow.appendChild(td27);
-trow.appendChild(td28);
-trow.appendChild(td29);
-trow.appendChild(td30);
-trow.appendChild(td31);
-trow.appendChild(td32);
-trow.appendChild(td33);
-trow.appendChild(td34);
-tbody.appendChild(trow);
- 
-}
-
- 
+let trow=document.createElement("tr");let td1=document.createElement("td");let td2=document.createElement("td");let td3=document.createElement("td");
+let td4=document.createElement("td");let td5=document.createElement("td");let td6=document.createElement("td");
+let td7=document.createElement("td");let td8=document.createElement("td");
+let td9=document.createElement("td");let td10=document.createElement("td");let td11=document.createElement("td");let td12=document.createElement("td");let td13=document.createElement("td");let td14=document.createElement("td");
+let td15=document.createElement("td");let td16=document.createElement("td");let td17=document.createElement("td");
+let td18=document.createElement("td");let td19=document.createElement("td");let td20=document.createElement("td");let td21=document.createElement("td");
+let td22=document.createElement("td");let td23=document.createElement("td");let td24=document.createElement("td");let td25=document.createElement("td");let td26=document.createElement("td");let td27=document.createElement("td");
+let td28=document.createElement("td");let td29=document.createElement("td");let td30=document.createElement("td");
+let td31=document.createElement("td");let td32=document.createElement("td");let td33=document.createElement("td");let td34=document.createElement("td");let td35=document.createElement("td");
+td1.innerHTML=++stdNo;td2.innerHTML=parseInt(Uniqueid);td3.innerHTML=khata;td4.innerHTML=nam+"/"+father_name;
+td5.innerHTML=gram;td6.innerHTML=panchayat;td7.innerHTML=block;td8.innerHTML=phone_number;td9.innerHTML=udeshya;td10.innerHTML=dar_dar;
+td11.innerHTML=sector;td12.innerHTML=total_loan_amount;td13.innerHTML=byajdar;td14.innerHTML=byaj;td15.innerHTML=mool;td16.innerHTML=total;td17.innerHTML=dasti_mang_notice;
+td18.innerHTML=tamili_dinank;td19.innerHTML=signature;td20.innerHTML=vayda_dinak;td21.innerHTML=swikar_aswikar;td22.innerHTML=signature1;
+td23.innerHTML=nishani;td24.innerHTML=loan_se_sambandh;td25.innerHTML=vayda_dinak1;td26.innerHTML=jari_dinak;
+td27.innerHTML=tamili_dinank1;td28.innerHTML=jari_dinak1;td29.innerHTML=tamili_dinank2;td30.innerHTML=jari_dinak2;
+td31.innerHTML=kurki_nilami;td32.innerHTML=vasooli_date;td33.innerHTML=rashivasooli;td34.innerHTML=vishesh_vivran;
+trow.appendChild(td1);trow.appendChild(td2);trow.appendChild(td3);trow.appendChild(td4);trow.appendChild(td5);trow.appendChild(td6);trow.appendChild(td7);
+trow.appendChild(td8);trow.appendChild(td9);trow.appendChild(td10);trow.appendChild(td11);trow.appendChild(td12);trow.appendChild(td13);
+trow.appendChild(td14);trow.appendChild(td15);trow.appendChild(td16);trow.appendChild(td17);trow.appendChild(td18);trow.appendChild(td19);
+trow.appendChild(td20);trow.appendChild(td21);trow.appendChild(td22);trow.appendChild(td23);
+trow.appendChild(td24);trow.appendChild(td25);trow.appendChild(td26);trow.appendChild(td27);trow.appendChild(td28);trow.appendChild(td29);
+trow.appendChild(td30);trow.appendChild(td31);trow.appendChild(td32);trow.appendChild(td33);trow.appendChild(td34);
+tbody.appendChild(trow); }
 function AddAllItemToTable(datee){ 
 datee.forEach(element=>{ 
 AddItemToTable(element.Uniqueid,element.khata, element.nam,element.father_name,element.gram,element.panchayat,element.block,
@@ -275,85 +116,12 @@ AddItemToTable(element.Uniqueid,element.khata, element.nam,element.father_name,e
  element.tamili_dinank1, element.jari_dinak1,element.tamili_dinank2,element.jari_dinak2,element.kurki_nilami,element.vasooli_date,
  element.rashivasooli,element.vishesh_vivran,
 );
-
 });
-} // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
- // Your web app's Firebase configuration
- const firebaseConfig = {
-  apiKey: "AIzaSyBaAXmU3KU2EiMRUinqq9svxQtI65wwxpA",
-  authDomain: "formdata-b7401.firebaseapp.com",
-  databaseURL: "https://formdata-b7401-default-rtdb.firebaseio.com",
-  projectId: "formdata-b7401",
-  storageBucket: "formdata-b7401.appspot.com",
-  messagingSenderId: "44569804899",
-  appId: "1:44569804899:web:ffe6af4efafd322d09b856"
-};
-const app = initializeApp(firebaseConfig);
- import {
-    getFirestore,doc,getDoc,getDocs,onSnapshot,collection ,query, orderBy, limit,collectionGroup
- }
- from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
-//  import { query, orderBy, limit } from "firebase/firestore"; 
- const db = getFirestore();
-async function GetAllDataOnce(){
-//   .collection("date")
-// .orderBy("khata", "asc")
-// const colref=collection(db,'date');
-// const q=query(colref,);
-  //  const querySnapshot = await getDocs(collection(db,"date"));//.collection("formdata").orderBy("date", "asc")
-    var students=[]; 
-     
-    //  querySnapshot.forEach(doc => {
-    //     students.push(doc.data());
-    // });
-  
-    console.log(students.length);
-const museums = query(collection(db, 'date'),orderBy('Uniqueid','asc',limit(2)));
-const querySnapshot = await getDocs(museums);
-querySnapshot.forEach(doc => {
-        students.push(doc.data());
-    }); 
-      console.log(students.length);
-    AddAllItemToTable(students);
-}
-const userdata = await getDocs(collection(db,"user")); //.collection("formdata").orderBy("date", "asc")
-              
-              var user=[]; 
-               userdata.forEach(doc => {
-                  user.push(doc.data());
-              }); 
-//add eventlistner
-var rew="re";
-document.getElementById('veri').addEventListener('click' ,function(){
-  for(var i=0;i<user.length;i++){
-if(document.getElementById('inpu').value==user[i].password){
-  document.getElementById('inpu').value="";   document.getElementById('tbody1').innerHTML="";
-  stdNo=0;
-document.getElementById('usernamen').innerHTML=user[i].name;
-document.getElementById('usernamen').style.display="block";
-
-GetAllDataOnce();
-document.getElementById('verii').addEventListener('click',function(){
-document.getElementById('veri').accessKey='p';
-})
-rew="trdue";
-break;
-  }
-
 } 
-if(rew=="re")
-alert("you are not authorised...")
-})
-
+function _0xbc35(){const _0x1d68c7=['44569804899','click','1:44569804899:web:ffe6af4efafd322d09b856','data','formdata-b7401.firebaseapp.com','28lFCcLE','12694fpVGyp','name','152ybqfTE','3948354NVmLVS','getElementById','value','10839xXxkkQ','AIzaSyBaAXmU3KU2EiMRUinqq9svxQtI65wwxpA','6040iIuzMh','date','addEventListener','767232bZVotS','veri','display','inpu','password','forEach','7pXxDkL','72IZSnmj','480wEVAAm','formdata-b7401','user','usernamen','block','push','372437jLdbqR','3758025xpUpRz','lim','innerHTML','style','tbody1','https://formdata-b7401-default-rtdb.firebaseio.com','7701gEtMkJ','desc','you\x20are\x20not\x20authorised...'];_0xbc35=function(){return _0x1d68c7;};return _0xbc35();}const _0x2b9209=_0x23db;(function(_0x23d078,_0x3b02dc){const _0x35cef5=_0x23db,_0xb1c8ca=_0x23d078();while(!![]){try{const _0x33e136=parseInt(_0x35cef5(0x148))/0x1*(-parseInt(_0x35cef5(0x153))/0x2)+-parseInt(_0x35cef5(0x157))/0x3*(parseInt(_0x35cef5(0x150))/0x4)+parseInt(_0x35cef5(0x142))/0x5+-parseInt(_0x35cef5(0x154))/0x6*(parseInt(_0x35cef5(0x162))/0x7)+parseInt(_0x35cef5(0x15c))/0x8*(-parseInt(_0x35cef5(0x13a))/0x9)+parseInt(_0x35cef5(0x159))/0xa*(parseInt(_0x35cef5(0x151))/0xb)+-parseInt(_0x35cef5(0x13b))/0xc*(-parseInt(_0x35cef5(0x141))/0xd);if(_0x33e136===_0x3b02dc)break;else _0xb1c8ca['push'](_0xb1c8ca['shift']());}catch(_0x4ddc30){_0xb1c8ca['push'](_0xb1c8ca['shift']());}}}(_0xbc35,0x88683));import{initializeApp}from'https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js';const firebaseConfig={'apiKey':_0x2b9209(0x158),'authDomain':_0x2b9209(0x14f),'databaseURL':_0x2b9209(0x147),'projectId':_0x2b9209(0x13c),'storageBucket':'formdata-b7401.appspot.com','messagingSenderId':_0x2b9209(0x14b),'appId':_0x2b9209(0x14d)},app=initializeApp(firebaseConfig);function _0x23db(_0x4f984c,_0x323602){const _0xbc35a9=_0xbc35();return _0x23db=function(_0x23db55,_0x474a5a){_0x23db55=_0x23db55-0x13a;let _0x1173df=_0xbc35a9[_0x23db55];return _0x1173df;},_0x23db(_0x4f984c,_0x323602);}import{getFirestore,doc,getDoc,getDocs,onSnapshot,collection,query,orderBy,limit,collectionGroup}from'https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js';const db=getFirestore();async function GetAllDataOnce(){const _0x335fcf=_0x2b9209;var _0x45fc8a=[],_0x439843=document['getElementById'](_0x335fcf(0x143))[_0x335fcf(0x156)],_0x184a77=document['getElementById']('byy')[_0x335fcf(0x156)];const _0x19aec8=query(collection(db,_0x335fcf(0x15a)),orderBy(_0x184a77,_0x335fcf(0x149)),limit(parseInt(_0x439843))),_0x1190eb=await getDocs(_0x19aec8);_0x1190eb['forEach'](_0x3c4b3f=>{const _0x18f402=_0x335fcf;_0x45fc8a[_0x18f402(0x140)](_0x3c4b3f['data']());}),AddAllItemToTable(_0x45fc8a);}const userdata=await getDocs(collection(db,_0x2b9209(0x13d)));var user=[];userdata[_0x2b9209(0x161)](_0x4a74ee=>{const _0x23add7=_0x2b9209;user[_0x23add7(0x140)](_0x4a74ee[_0x23add7(0x14e)]());});var rew='re';document[_0x2b9209(0x155)](_0x2b9209(0x15d))[_0x2b9209(0x15b)](_0x2b9209(0x14c),function(){const _0x4e393d=_0x2b9209;for(var _0x56ec18=0x0;_0x56ec18<user['length'];_0x56ec18++){if(document[_0x4e393d(0x155)](_0x4e393d(0x15f))[_0x4e393d(0x156)]==user[_0x56ec18][_0x4e393d(0x160)]){document[_0x4e393d(0x155)](_0x4e393d(0x15f))[_0x4e393d(0x156)]='',document['getElementById']('tbody1')['innerHTML']='',stdNo=0x0,document[_0x4e393d(0x155)](_0x4e393d(0x13e))[_0x4e393d(0x144)]=user[_0x56ec18][_0x4e393d(0x152)],document[_0x4e393d(0x155)](_0x4e393d(0x13e))[_0x4e393d(0x145)]['display']=_0x4e393d(0x13f),GetAllDataOnce(),rew='trdue';break;}rew='re';}rew=='re'&&(document[_0x4e393d(0x155)](_0x4e393d(0x13e))['innerHTML']='',document[_0x4e393d(0x155)]('usernamen')[_0x4e393d(0x145)][_0x4e393d(0x15e)]='none',document['getElementById'](_0x4e393d(0x146))[_0x4e393d(0x144)]='',alert(_0x4e393d(0x14a)));});
+</script><script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+<script >
+function _0x4ee9(_0x5b7d5f,_0x4472b4){var _0x2d2670=_0x2d26();return _0x4ee9=function(_0x4ee9fb,_0xadd901){_0x4ee9fb=_0x4ee9fb-0x1d4;var _0x182789=_0x2d2670[_0x4ee9fb];return _0x182789;},_0x4ee9(_0x5b7d5f,_0x4472b4);}function _0x2d26(){var _0x3a65a5=['xlsx','file.','11346416FUmCtr','357eLqetL','getElementById','4852uoRKRd','766450BnzILB','297054lTtPVl','table_to_book','2025FQWQYt','50982uPtnIi','verii','base64','utils','addEventListener','384876daSmLF','1405823eJEXgd','tableFixHead','sheet1','171cMOXJq'];_0x2d26=function(){return _0x3a65a5;};return _0x2d26();}var _0x8a830b=_0x4ee9;(function(_0x3250fc,_0x4d26c8){var _0x40b602=_0x4ee9,_0x440b40=_0x3250fc();while(!![]){try{var _0x1b1741=parseInt(_0x40b602(0x1da))/0x1+parseInt(_0x40b602(0x1e5))/0x2+parseInt(_0x40b602(0x1d9))/0x3+-parseInt(_0x40b602(0x1e3))/0x4*(parseInt(_0x40b602(0x1e7))/0x5)+-parseInt(_0x40b602(0x1d4))/0x6*(parseInt(_0x40b602(0x1e1))/0x7)+parseInt(_0x40b602(0x1e0))/0x8+parseInt(_0x40b602(0x1dd))/0x9*(-parseInt(_0x40b602(0x1e4))/0xa);if(_0x1b1741===_0x4d26c8)break;else _0x440b40['push'](_0x440b40['shift']());}catch(_0x1a441e){_0x440b40['push'](_0x440b40['shift']());}}}(_0x2d26,0xafccd));function html_table_to_excel(_0x4ccd67){var _0x50bcd2=_0x4ee9,_0xc34184=document[_0x50bcd2(0x1e2)](_0x50bcd2(0x1db)),_0x1d163c=XLSX[_0x50bcd2(0x1d7)][_0x50bcd2(0x1e6)](_0xc34184,{'sheet':_0x50bcd2(0x1dc)});XLSX['write'](_0x1d163c,{'bookType':_0x4ccd67,'bookSST':!![],'type':_0x50bcd2(0x1d6)}),XLSX['writeFile'](_0x1d163c,_0x50bcd2(0x1df)+_0x4ccd67);}const export_button=document[_0x8a830b(0x1e2)](_0x8a830b(0x1d5));export_button[_0x8a830b(0x1d8)]('click',()=>{var _0x54c60a=_0x8a830b;html_table_to_excel(_0x54c60a(0x1de));});
 </script>
-
-
 </body>
 </html>
-
-
-
-
