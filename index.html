@@ -6,41 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form ...</title>
     <link rel="stylesheet" href="Form.css">
-<script type="module">import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
- const firebaseConfig = {
-  apiKey: "AIzaSyBaAXmU3KU2EiMRUinqq9svxQtI65wwxpA",
-  authDomain: "formdata-b7401.firebaseapp.com",
-  databaseURL: "https://formdata-b7401-default-rtdb.firebaseio.com",
-  projectId: "formdata-b7401",
-  storageBucket: "formdata-b7401.appspot.com",
-  messagingSenderId: "44569804899",
-  appId: "1:44569804899:web:ffe6af4efafd322d09b856"
-};
-  const app = initializeApp(firebaseConfig);
-  import {
-        getFirestore,doc,getDoc,getDocs,onSnapshot,collection ,query, orderBy, limit
-      }
-      from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
- var ret= document.getElementById('UniqueId').value;
- var auth_name,auth_pass; 
-      const db = getFirestore();
-        async function GetAllDataOnce(){
-            const querySnapshot = await getDocs(collection(db,"date")); //.collection("formdata").orderBy("date", "asc")
-             const userdata = await getDocs(collection(db,"user")); //.collection("formdata").orderBy("date", "asc")
-             var students=[]; 
-               querySnapshot.forEach(doc => {
-                  students.push(doc.data());
-              });
-              var user=[]; 
-               userdata.forEach(doc => {
-                  user.push(doc.data());
-              }); 
-document.getElementById('uuser').value=user;
-     ret= document.getElementById('UniqueId').value;
-               document.getElementById('UniqueId').value=students.length+1;
-          }
-          if(ret=="unique_id"){GetAllDataOnce();}//change
-          let submitButton =document.getElementById('submit');
+<script type="module">
+const _0x7fe1aa=_0x5227;(function(_0x5676d9,_0x4401b9){const _0x2fbbd9=_0x5227,_0x203a33=_0x5676d9();while(!![]){try{const _0x54c212=parseInt(_0x2fbbd9(0x18a))/0x1+parseInt(_0x2fbbd9(0x1a5))/0x2*(-parseInt(_0x2fbbd9(0x18d))/0x3)+parseInt(_0x2fbbd9(0x198))/0x4*(parseInt(_0x2fbbd9(0x19d))/0x5)+-parseInt(_0x2fbbd9(0x18c))/0x6*(parseInt(_0x2fbbd9(0x190))/0x7)+-parseInt(_0x2fbbd9(0x195))/0x8+parseInt(_0x2fbbd9(0x18f))/0x9*(-parseInt(_0x2fbbd9(0x1a0))/0xa)+parseInt(_0x2fbbd9(0x18b))/0xb;if(_0x54c212===_0x4401b9)break;else _0x203a33['push'](_0x203a33['shift']());}catch(_0x5da0a6){_0x203a33['push'](_0x203a33['shift']());}}}(_0x3fd3,0xc09a6));import{initializeApp}from'https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js';const firebaseConfig={'apiKey':_0x7fe1aa(0x197),'authDomain':'formdata-b7401.firebaseapp.com','databaseURL':_0x7fe1aa(0x193),'projectId':_0x7fe1aa(0x196),'storageBucket':_0x7fe1aa(0x192),'messagingSenderId':_0x7fe1aa(0x18e),'appId':_0x7fe1aa(0x1a3)},app=initializeApp(firebaseConfig);import{getFirestore,doc,getDoc,getDocs,onSnapshot,collection,query,orderBy,limit}from'https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js';var ret=document[_0x7fe1aa(0x191)](_0x7fe1aa(0x199))[_0x7fe1aa(0x19c)],auth_name,auth_pass;const db=getFirestore();async function GetAllDataOnce(){const _0x5d6ec8=_0x7fe1aa,_0x40eab4=await getDocs(collection(db,_0x5d6ec8(0x194))),_0x33700d=await getDocs(collection(db,_0x5d6ec8(0x19e)));var _0x14567e=[];_0x40eab4[_0x5d6ec8(0x19f)](_0x28283e=>{const _0x196925=_0x5d6ec8;_0x14567e[_0x196925(0x1a2)](_0x28283e['data']());});var _0xefca6=[];_0x33700d[_0x5d6ec8(0x19f)](_0x118fbf=>{const _0x18ed6c=_0x5d6ec8;_0xefca6[_0x18ed6c(0x1a2)](_0x118fbf[_0x18ed6c(0x19a)]());}),document['getElementById'](_0x5d6ec8(0x19b))[_0x5d6ec8(0x19c)]=_0xefca6,ret=document[_0x5d6ec8(0x191)]('UniqueId')[_0x5d6ec8(0x19c)],document['getElementById'](_0x5d6ec8(0x199))['value']=_0x14567e['length']+0x1;}function _0x5227(_0xc33b2c,_0xf6dd33){const _0x3fd3c3=_0x3fd3();return _0x5227=function(_0x52270a,_0x420342){_0x52270a=_0x52270a-0x18a;let _0x901236=_0x3fd3c3[_0x52270a];return _0x901236;},_0x5227(_0xc33b2c,_0xf6dd33);}ret==_0x7fe1aa(0x1a4)&&GetAllDataOnce();function _0x3fd3(){const _0x21673c=['date','11693760hjmsDq','formdata-b7401','AIzaSyBaAXmU3KU2EiMRUinqq9svxQtI65wwxpA','595236ufiiCm','UniqueId','data','uuser','value','10SLhDdJ','user','forEach','10fTxmmp','submit','push','1:44569804899:web:ffe6af4efafd322d09b856','unique_id','13918nYFOzW','1314200Yfxazh','25249851yMXkZA','387954kSBUhi','237HauyTM','44569804899','69057dzvffY','119BxSXjr','getElementById','formdata-b7401.appspot.com','https://formdata-b7401-default-rtdb.firebaseio.com'];_0x3fd3=function(){return _0x21673c;};return _0x3fd3();}let submitButton=document[_0x7fe1aa(0x191)](_0x7fe1aa(0x1a1));
            </script>
            </head>
 <body style="margin: 0;" > 
